@@ -25,7 +25,7 @@ namespace MoodAnalyzerProblem
             }
             else
             {
-                return "I think you are happy";
+                return "happy";
             }
         }
     }
