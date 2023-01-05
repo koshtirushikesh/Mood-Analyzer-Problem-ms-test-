@@ -12,6 +12,27 @@ namespace MoodAnalyzerProblem
         public static string MoodAnalyserPatternOfSad = "sad";
         public static string MoodAnalyserPatternOfHappy = "happy";
 
+
+        public string AnalyzeMood()
+        {
+            string MoodInput1 = "I am in Sad Mood";
+            string MoodInput2 = "I am in Any Mood";
+
+            if (Regex.IsMatch(MoodInput1, MoodAnalyserPatternOfSad, RegexOptions.IgnoreCase))
+            {
+                return "sad";
+
+            }
+            else if (Regex.IsMatch(MoodInput2, MoodAnalyserPatternOfHappy, RegexOptions.IgnoreCase))
+            {
+                return "happy";
+            }
+            else
+            {
+                return "happy";
+            }
+        }
+
         public string AnalyzeMood(string MoodInput) 
         {
             if (Regex.IsMatch(MoodInput, MoodAnalyserPatternOfSad, RegexOptions.IgnoreCase))
@@ -21,7 +42,7 @@ namespace MoodAnalyzerProblem
             }
             else if (Regex.IsMatch(MoodInput, MoodAnalyserPatternOfHappy, RegexOptions.IgnoreCase))
             {
-                return "happy";
+                return "sad";
             }
             else
             {

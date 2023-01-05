@@ -8,6 +8,7 @@
             string mood =  Console.ReadLine();
 
             MoodAnalyser moodAnalyser = new MoodAnalyser();
+            //Console.WriteLine(moodAnalyser.AnalyzeMood());
             Console.WriteLine(moodAnalyser.AnalyzeMood(mood));
         }
     }
